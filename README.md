@@ -1,6 +1,6 @@
 # Simple React Native App
 
-A React Native template featuring sensible project navigation, environment variables, themes, and more.
+A simple React Native template featuring sensible project navigation, environment variables, themes, and more.
 
 ## Site Metadata
 
