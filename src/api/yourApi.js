@@ -2,7 +2,7 @@ import { Platform } from 'react-native';
 import Auth from './auth';
 import { YOUR_API_URL_IOS, YOUR_API_URL_ANDROID } from '../../env.json';
 
-export default class Redwood {
+export default class YourApi {
   constructor() {
     this.url = Platform.OS === 'ios' ? YOUR_API_URL_IOS : YOUR_API_URL_ANDROID;
     this.auth = new Auth();
