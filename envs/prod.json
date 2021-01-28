@@ -1,0 +1,5 @@
+{
+  "IS_PROD": true,
+  "YOUR_API_URL_IOS": "https://your-api.url.com",
+  "YOUR_API_URL_ANDROID": "https://your-api.url.com"
+}

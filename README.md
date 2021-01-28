@@ -4,22 +4,20 @@ A simple React Native template featuring sensible project navigation, environmen
 
 ## Site Metadata
 
-CTRL+F in the project to change the following React app information:
+CTRL+F in the project to change the following React Native app information:
 
-- `SAMPLE_PROJECT_NAME`: the name of your React app
-- `SAMPLE_DESCRIPTION`: the description of your React app
-- `SAMPLE_PREVIEW_IMAGE`: a preview image that displays when the link to your React app is shared
+- `SAMPLE_PROJECT_NAME`: the name of your React Native app
 
 ## Environment Variables
 
 Modify the following files to set environment variables for this React app:
 
-- `.env.development`: environment variables for development (for `npm start`)
-- `.env.production`: environment variables for production (for `npm run build`)
+- `envs/dev.json`: environment variables for development (set using `npm run env:dev`)
+- `envs/prod.json`: environment variables for production (set using `npm run env:prod`)
 
-Environment variables must be formatted `REACT_APP_ENV_NAME_HERE=insertdatahere`, always preceded by `REACT_APP_`.
+Running `npm run ios` or `npm run android` will automatically run `npm run env:dev`, thereby ensuring that local development uses development environment variables.
 
-Environment variables can be accessed using `process.env.REACT_APP_ENVIRONMENT_VARIABLE_NAME`.
+Environment variables can be accessed by importing them from `env.json`.
 
 ## Available Scripts
 

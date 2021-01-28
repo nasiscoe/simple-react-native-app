@@ -1,0 +1,48 @@
+{
+  "name": "SAMPLE_PROJECT_NAME",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "env:dev": "node scripts/set-env.js dev",
+    "env:prod": "node scripts/set-env.js prod",
+    "_ios": "react-native run-ios",
+    "ios": "npm run env:dev && npm run _ios",
+    "ios:prod": "npm run env:prod && npm run _ios",
+    "_build:ios": "react-native bundle --platform ios --entry-file index.js --bundle-output ./ios/main.jsbundle",
+    "build:ios": "npm run env:dev && npm run _build:ios",
+    "build:ios:prod": "npm run env:prod && npm run _build:ios",
+    "_android": "react-native run-android",
+    "android": "npm run env:dev && npm run _android",
+    "android:prod": "npm run env:prod && npm run _android",
+    "_build:android": "react-native bundle --platform android --entry-file index.js --bundle-output ./android/app/src/main/assets/index.android.bundle --assets-dest ./android/app/src/main/res",
+    "build:android": "npm run env:dev && npm run _build:android",
+    "build:android:prod": "npm run env:prod && npm run _build:android",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/native": "^5.9.2",
+    "react": "16.13.1",
+    "react-native": "0.63.4",
+    "react-native-gesture-handler": "^1.9.0",
+    "react-native-reanimated": "^1.13.2",
+    "react-native-safe-area-context": "^3.1.9",
+    "react-native-screens": "^2.17.1",
+    "react-native-secure-key-store": "^2.0.9"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.10",
+    "@babel/runtime": "7.12.5",
+    "@react-native-community/eslint-config": "1.1.0",
+    "babel-jest": "25.5.1",
+    "eslint": "6.8.0",
+    "jest": "25.5.4",
+    "metro-react-native-babel-preset": "0.59.0",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
