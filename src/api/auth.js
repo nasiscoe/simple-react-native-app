@@ -1,4 +1,3 @@
-import Auth0 from 'react-native-auth0';
 import RNSecureKeyStore, {ACCESSIBLE} from "react-native-secure-key-store";
 import { AUTH_URL, AUTH_AUDIENCE, AUTH_CLIENT_ID } from '../../env.json';
 

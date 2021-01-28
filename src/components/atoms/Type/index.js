@@ -11,44 +11,37 @@ const Type = ({ children, numberOfLines, style, type }) => {
       case 'h1':
         return {
           color: theme.text,
-          fontSize: 34,
-          fontFamily: 'Barlow-Black',
+          fontSize: 34
         }
       case 'header':
         return {
           color: theme.text,
-          fontSize: 17,
-          fontFamily: 'Barlow',
+          fontSize: 17
         }
       case 'subheader':
         return {
           color: theme.accent,
-          fontSize: 16,
-          fontFamily: 'Barlow',
+          fontSize: 16
         }
       case 'value':
         return {
           color: theme.text,
-          fontSize: 16,
-          fontFamily: 'Barlow-ExtraBold',
+          fontSize: 16
         }
       case 'largeValue':
         return {
           color: theme.text,
-          fontSize: 20,
-          fontFamily: 'Barlow-ExtraBold'
+          fontSize: 20
         }
       case 'text':
         return {
           color: theme.text,
-          fontSize: 15,
-          fontFamily: 'Barlow',
+          fontSize: 15
         }
       default:
         return {
           color: theme.text,
-          fontSize: 15,
-          fontFamily: 'Barlow',
+          fontSize: 15
         }
     }
   };

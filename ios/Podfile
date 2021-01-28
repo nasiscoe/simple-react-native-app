@@ -8,6 +8,8 @@ target 'SAMPLE_PROJECT_NAME' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  pod 'RNReactNativeHapticFeedback', :path => '../node_modules/react-native-haptic-feedback'
+
   target 'SAMPLE_PROJECT_NAMETests' do
     inherit! :complete
     # Pods for testing

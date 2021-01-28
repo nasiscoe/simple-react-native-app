@@ -579,7 +579,6 @@ const styles = StyleSheet.create({
     dropDownItem: {
         paddingVertical: 8,
         width: '100%',
-        fontFamily: 'Barlow',
         flexDirection: 'row',
         justifyContent: 'center'
     },
@@ -589,7 +588,6 @@ const styles = StyleSheet.create({
       borderBottomWidth: 1,
       paddingHorizontal: 0,
       paddingVertical: 8,
-      fontFamily: 'Barlow',
       fontWeight: '600',
       marginBottom: 10,
     },

@@ -43,7 +43,10 @@ const Card = ({ style, children }) => {
         animations.scale.pressInAnimation(scaleInAnimated.current);
         ReactNativeHapticFeedback.trigger("impactLight", options)
       }}
-      onPressOut={() => {animations.scale.pressOutAnimation(scaleInAnimated.current);}}>
+      onPressOut={() => {
+        animations.scale.pressOutAnimation(scaleInAnimated.current);
+        ReactNativeHapticFeedback.trigger("impactLight", options);
+      }}>
       <Animated.View style={[styles.card, style]}>
         {children}
       </Animated.View>

@@ -111,7 +111,6 @@ const Button = ({ buttonStyle, textStyle, accessibilityLabel, children, disabled
     text: {
       color: getTypeSpecificStyles().textColor,
       fontSize: 20,
-      fontFamily: 'Barlow-ExtraBold',
       textAlign: 'center',
       opacity: disabled ? 0.6 : 1
     },
@@ -130,7 +129,10 @@ const Button = ({ buttonStyle, textStyle, accessibilityLabel, children, disabled
           animations.scale.pressInAnimation(scaleInAnimated.current);
           ReactNativeHapticFeedback.trigger("impactLight", options);
         }}
-        onPressOut={() => {animations.scale.pressOutAnimation(scaleInAnimated.current);}}>
+        onPressOut={() => {
+          animations.scale.pressOutAnimation(scaleInAnimated.current);
+          ReactNativeHapticFeedback.trigger("impactLight", options);
+        }}>
         <Animated.View style={[styles.button, buttonStyle]}>
           {children}
         </Animated.View>
