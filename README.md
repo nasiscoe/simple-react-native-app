@@ -2,6 +2,8 @@
 
 A simple React Native template featuring sensible project navigation, environment variables, themes, and more.
 
+If you enjoy this template, check out [simple-react-app](https://github.com/nasiscoe/simple-react-app).
+
 ## Site Metadata
 
 CTRL+F in the project to change the following React Native app information:
